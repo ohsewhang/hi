@@ -16,7 +16,7 @@ public class Switch2 {
 			case "대리":
 				System.out.println("300만원");
 			break;
-			default:
+			default: 
 				System.out.println("200만원");
 			}
 	}

@@ -4,9 +4,9 @@ public class BooleanExample {
    public static void main(String[]args) {
 	   boolean stop = true;
 	   if(stop) {
-		   System.out.println("せせせせせせせせせせせせせせせせせせせせせせせせせせせせせせ");
+		   System.out.println("鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申鐃緒申");
 	   } else {
-		   System.out.println(" ぱ し ぱ^");
+		   System.out.println(" 鐃緒申 鐃緒申 鐃緒申^");
 		   
 	   }
 	
