@@ -2,25 +2,28 @@ package e_class;
 
 public class Inheritance {
 	/*
-	 * ºÎ¸ðÀÚ½ÄÀÌ °°À¸¸é extends , ´Ù¸£¸é implements.
-	 * extends =»ó¼Ó (ºÎ¸ðÅ¬·¡½º´Â ´Ü ÇÏ³ª)´ÜÀÏ»ó¼Ó
-	 *  implements ±¸Çö (¹Ì¿Ï¼º±â´ÉÀ» ¿Ï¼ºÇÑ´Ù)1°³ÀÌ»óÀÇ ºÎ¸ð Å¬·¡½º¸¦ Çã¿ë
-	 *  1.ºÎ¸ð¿Í ÀÚ½Ä ¸ðµÎ°¡ Å¬·¡½º À¯ÇüÀÎ °æ¿ì
+	 * ë¶€ëª¨ìžì‹ì´ ê°™ìœ¼ë©´ extends , ë‹¤ë¥´ë©´ implements.
+	 * extends =ìƒì† (ë¶€ëª¨í´ëž˜ìŠ¤ëŠ” ë‹¨ í•˜ë‚˜)ë‹¨ì¼ìƒì†
+	 *  implements êµ¬í˜„ (ë¯¸ì™„ì„±ê¸°ëŠ¥ì„ ì™„ì„±í•œë‹¤)1ê°œì´ìƒì˜ ë¶€ëª¨ í´ëž˜ìŠ¤ë¥¼ í—ˆìš©
+	 *  1.ë¶€ëª¨ì™€ ìžì‹ ëª¨ë‘ê°€ í´ëž˜ìŠ¤ ìœ í˜•ì¸ ê²½ìš°
 	 *  =class A extends P{...} O
-	 *  =class A extends p1,p2{..} X ÀÌ°Ç ¾È‰Î
+	 *  =class A extends p1,p2{..} X ì´ê±´ ì•ˆï¿½ï¿½
 	 * 
 	 * 
-	 * 2. ºÎ¸ð¿Í ÀÚ½Ä ¸ðµÎ°¡ ÀÎÅÍÆäÀÌ½º À¯ÇüÀÎ °æ¿ì
+	 * 2. ë¶€ëª¨ì™€ ìžì‹ ëª¨ë‘ê°€ ì¸í„°íŽ˜ì´ìŠ¤ ìœ í˜•ì¸ ê²½ìš°
 	 *    interFace A extemds I1,I2{..} O
 	 * 
 	 * 
-	 * 3. ºÎ¸ð´Â ÀÎÅÍÆäÀÌ½º ÀÚ½ÄÀº Å¬·¡½º À¯ÇüÀÎ °æ¿ì
+	 * 3. ë¶€ëª¨ëŠ” ì¸í„°íŽ˜ì´ìŠ¤ ìžì‹ì€ í´ëž˜ìŠ¤ ìœ í˜•ì¸ ê²½ìš°
 	 *  class A implements I1,I2{...}
 	 * 
 	 * 
-	 * 4. ºÎ¸ð´Â Å¬·¡½º ÀÚ½ÄÀº ÀÎÅÍÆäÀÌ½ºÀÎ°æ¿ì
-	 *   .ÀÌ°Ç ºÒ°¡´É.XXXXXXXX
+	 * 4. ë¶€ëª¨ëŠ” í´ëž˜ìŠ¤ ìžì‹ì€ ì¸í„°íŽ˜ì´ìŠ¤ì¸ê²½ìš°
+	 *   .ì´ê±´ ë¶ˆê°€ëŠ¥.XXXXXXXX
 	 *   /////////////////////
-	 *   ui±¸Çö ÇïÇÁ¿¡¼­ ¸¶ÄÏ °Ë»ö¿¡ windowbuilder°í¤Ç°í
+	 *   uiêµ¬í˜„ í—¬í”„ì—ì„œ ë§ˆì¼“ ê²€ìƒ‰ì— windowbuilderê³ ã…—ê³ 
+	 *   
+	 *  5.extend,implement ë¥¼ í•¨ê»˜ ì‚¬ìš©í•˜ëŠ”ê²½ìš°
+	 *  class child extends P implements I1,I2....{}
 	 */
 }

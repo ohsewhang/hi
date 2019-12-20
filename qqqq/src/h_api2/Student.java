@@ -16,6 +16,30 @@ public class Student{
 		this.name = name;
 		this.score = score;
 	}
+	public int getSno() {
+		return sno;
+	}
+
+	public void setSno(int sno) {
+		this.sno = sno;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getScore() {
+		return score;
+	}
+
+	public void setScore(int score) {
+		this.score = score;
+	}
+
 	@Override//오브젝트가 가지고있는 투스트링이라는(자기자신해쉬값)값을 가져온다
 	public String toString() {
 		return sno + " - " +name+" - "+ score; 

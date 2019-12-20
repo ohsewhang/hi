@@ -22,10 +22,12 @@ public class Car {
 		Car c3 = new Car(" ±×·»Àú " , " »¡°­ ");
 		Car c4 = new Car(" ±×·»Àú ", " »¡°­ ", 100);
 		
-		c1.maxspeed = 200;
+		c1.maxspeed = 120;
 		System.out.println("model"+c1.model);
 		System.out.println("color"+c1.color);
 		System.out.println("max speed"+c1.maxspeed);
+		
+	
 		
 		System.out.println("c4 spac....");
 		System.out.println("model :"+ c4.model);
