@@ -28,6 +28,7 @@ public class ProductSearch extends JInternalFrame {
 	private JPanel panel_1;
 	private JRadioButton imBtn;
 	private JRadioButton exBtn;
+	
 	private Set<ProductVo> peList;
 	private Set<ProductVo> piList;
 	
@@ -66,7 +67,7 @@ public class ProductSearch extends JInternalFrame {
 		this.peList = pe;
 	}
 	public void search() {//search 메소드생성
-		Set<ProductVo> list = null;
+		Set<ProductVo> list = null;//하나의컬렉션을가지고 두개의 데이터를 핸들링하기위해 작성. 79행~82행
 		
 		 //검색어(시리얼,제품코드,제품명 3개 중 1개만 되면 검색됌)
 		ProductVo find = new ProductVo();
@@ -74,7 +75,7 @@ public class ProductSearch extends JInternalFrame {
 		find.setPcode(textField.getText());
 		find.setpName(textField.getText());
 		
-		textArea.setText("");//화면을 켰을때 꺠끗하게 비워놓고 시작.
+		textArea.setText("");//화면을 켰을때 깨끗하게 비워놓고 시작.
 		if(imBtn.isSelected()) {
 			list = piList;
 		}else {
@@ -148,6 +149,7 @@ public class ProductSearch extends JInternalFrame {
 	private JRadioButton getImBtn() {
 		if (imBtn == null) {
 			imBtn = new JRadioButton("\uC785\uACE0");//입고
+			
 			group.add(imBtn);			//라디오 버튼!!!!!!!!맨위 필드에 그룹 만들어준다.
 			imBtn.setSelected(true); //라디오 버튼 하나씩 클릭하게 만들어줌
 		}

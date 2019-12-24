@@ -24,7 +24,7 @@ public class ProductInput extends JInternalFrame {
 	private JTextField ea;
 	private JTextField nal;
 	private JButton btnNewButton;
-	private JLabel lblNewLabel_3;
+	private JLabel status;
 	private Set<ProductVo> piList;
 	
 	/**
@@ -63,16 +63,23 @@ public class ProductInput extends JInternalFrame {
 		getContentPane().add(getEa());
 		getContentPane().add(getNal());
 		getContentPane().add(getBtnNewButton());
-		getContentPane().add(getLblNewLabel_3());
+		getContentPane().add(getStatus());
 
 	}
 	public ProductInput(Set<ProductVo>pi) { //생성자를 만들어메인프레임이 가지고 있는 셋 구조의 컬렉션인 pilist가 레퍼러싱된것이다~~~~~~~
-		this();
+		this(); //자기자신의 매개변수가없는 걸로 호출함.이걸쓰지않으면 유아이가 생성되지않는다
 		this.piList = pi;
 		
 	}
 	public void input() {  //밑에 인풋창에 있는걸 생성자밑에 만들어준거다.밑에는 출력만.//인풋 메소드..만듬;;
-		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd"); //날짜생성
+		//입력항목이 공백인경우,
+		if(pCode.equals("")||pName.getText().equals("")||
+		ea.getText().equals("") || nal.getText().equals("")){
+			status.setText("입력항목에 오류가있습니다.");
+			pCode.requestFocus();
+			return;
+		}
 		try {
 		String serial =  sdf.format(new Date())+"-" +MemberMain.iSerial;
 		String pC = pCode.getText();
@@ -172,13 +179,13 @@ public class ProductInput extends JInternalFrame {
 		}
 		return btnNewButton;
 	}
-	private JLabel getLblNewLabel_3() {
-		if (lblNewLabel_3 == null) {
-			lblNewLabel_3 = new JLabel("");
-			lblNewLabel_3.setBackground(new Color(153, 255, 102));
-			lblNewLabel_3.setOpaque(true);
-			lblNewLabel_3.setBounds(12, 233, 183, 15);
+	private JLabel getStatus() {
+		if (status == null) {
+			status = new JLabel("");
+			status.setBackground(new Color(153, 255, 102));
+			status.setOpaque(true);
+			status.setBounds(12, 233, 183, 15);
 		}
-		return lblNewLabel_3;
+		return status;
 	}
 }
